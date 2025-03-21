@@ -2,6 +2,8 @@ name: Basic Workflow - Pull Request Trigger
 
 on:
   pull_request:
+    branches:
+      - main
     types: [opened, synchronize, reopened]
 
 jobs:
