@@ -5,11 +5,11 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  deploy:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Deploy
-        run: echo "Deploying on pull request event"
+      - name: Running unit tests
+        run: echo "Runing unit tests on pull request event"
